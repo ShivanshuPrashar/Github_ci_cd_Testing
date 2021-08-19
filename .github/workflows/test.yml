@@ -1,0 +1,8 @@
+name: Build on Windows
+on: push
+jobs:
+  build:
+    runs-on: self-hosted
+    steps:
+      - run: yum install docker -y
+      - run: systemctl start docker
